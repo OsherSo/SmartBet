@@ -8,10 +8,9 @@ async function updateByLeagueName(league) {
     const allNameArr = await dataModels.Relevant.find({})
     if (allNameArr.some(x => x.name == league)) {
         await dataModels[league].remove({})
-        let playingteams = await dataModels.Relevant.findOne({name: league})
+        let playingteams = await dataModels.Relevant.findOne({ name: league })
         playingteams = playingteams.relevantTeams
-        const data = await csvToJson(league)
-
+        let data = await csvToJson(league)
         const filtered = filterData(data, playingteams)
         for (let key in filtered.homeGames) {
             let teamH = new dataModels[league](filtered.homeGames[key])
