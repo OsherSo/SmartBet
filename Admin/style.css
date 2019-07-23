@@ -1,0 +1,58 @@
+body{
+    background: url('https://cdn-images-1.medium.com/max/2600/1*TYAzzTJ60x-qg5N81ElU9A.png')
+}
+.con{
+    display: grid;
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "c c c c";
+    justify-items: center;
+    align-items: center;
+
+}
+#new{
+    grid-area: a;
+    margin:20px;
+}
+#update{
+    grid-area: b;
+    margin:20px;
+}
+#update_teams{
+    grid-area: c;
+    margin:20px;
+}
+
+
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 0px 0px 15px rgb(197, 197, 197);
+    background-color: #0d3f67;
+    color: wheat;
+    outline: none;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+input{
+    border:none;
+    outline: none;
+    border: 0;
+    width:50px;
+    box-shadow: 0px 0px 10px wheat;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+}
+#teamsNames{
+    width: 400px;
+}
+#leagueName{
+    width: 150px;
+}

@@ -1,0 +1,2 @@
+
+const LeChampionnat = ["Paris SG", "Lille", "Lyon", "St Etienne", "Marseille", "Montpellier", "Nice", "Reims", "Nimes", "Rennes", "Strasbourg", "Nantes", "Angers", "Bordeaux", "Amiens", "Toulouse", "Monaco", "Dijon"]
