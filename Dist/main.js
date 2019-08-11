@@ -34,7 +34,7 @@ $('body').on('keypress', '#awayTeam', function (event) { // I CANT PRESS ENTER A
 
 $('body').on('click', '.calcOdds', function () {
     const arrResult = $('.result')
-    for(let j of arrResult){
+    for (let j of arrResult) {
         $(j).empty()
     }
     const arrOdds = $('.odds')
@@ -50,14 +50,41 @@ $('body').on('click', '.calcOdds', function () {
     }
 })
 
+$("body").keyup(function (event) {
+    if (event.keyCode === 13) {
+        const arrResult = $('.result')
+        for (let j of arrResult) {
+            $(j).empty()
+        }
+        const arrOdds = $('.odds')
+        for (let i of arrOdds) {
+            if ($(i).val() !== '' && $(i).val() > 1) {
+                const data = $(i).parent().text().split(' ')
+                const num = parseFloat((data[data.length - 4]))
+                const newOdd = $(i).val()
+                let result = (newOdd - 1) * (num / 100) - (1 - (num / 100))
+                result = result / (newOdd - 1)
+                $(i).parent().find('.result').html((result * 100).toFixed(2))
+            }
+        }
+    }
+});
+
+$("body").keyup(function (event) {
+    if (event.keyCode === 46) {
+        $('.odds').val("")
+        $('.result').empty()
+    }
+});
+
 $('body').on('click', '.deleteButton', function () {
     $('.odds').val("")
     $('.result').empty()
 })
 
 
-$.get('/allTeams' , function(res){
-    for(let i of res){
+$.get('/allTeams', function (res) {
+    for (let i of res) {
         $('.list').append(`<div class="league">${i}</div>`)
     }
 })
