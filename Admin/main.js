@@ -4,7 +4,7 @@ const leagues = [
         name: "Premier-Leauge",
         url: {
             old: "https://www.football-data.co.uk/mmz4281/1819/E0.csv",
-            new: "https://www.football-data.co.uk/mmz4281/1819/E0.csv"
+            new: "https://www.football-data.co.uk/mmz4281/1920/E0.csv"
         },
         relevantTeams: `["Man City", "Liverpool", "Chelsea", "Tottenham", "Arsenal", "Man United", "Wolves", "Everton", "Leicester", "West Ham", "Watford", "Crystal Palace", "Newcastle", "Bournemouth", "Burnley", "Southampton", "Brighton"]`
     },
@@ -49,7 +49,7 @@ const leagues = [
         name: "Ligue-1",
         url: {
             old: "https://www.football-data.co.uk/mmz4281/1819/F1.csv",
-            new: "https://www.football-data.co.uk/mmz4281/1819/F1.csv"
+            new: "https://www.football-data.co.uk/mmz4281/1920/F1.csv"
         },
         relevantTeams: `["Paris SG", "Lille", "Lyon", "St Etienne", "Marseille", "Montpellier", "Nice", "Reims", "Nimes", "Rennes", "Strasbourg", "Nantes", "Angers", "Bordeaux", "Amiens", "Toulouse", "Monaco", "Dijon"]`
     },
@@ -67,7 +67,7 @@ const leagues = [
         name: "Primeira-Liga",
         url: {
             old: "https://www.football-data.co.uk/mmz4281/1819/P1.csv",
-            new: "https://www.football-data.co.uk/mmz4281/1819/P1.csv"
+            new: "https://www.football-data.co.uk/mmz4281/1920/P1.csv"
         },
         relevantTeams: '["Benfica", "Porto", "Sp Lisbon", "Sp Braga", "Guimaraes", "Moreirense", "Rio Ave", "Boavista", "Belenenses", "Santa Clara", "Maritimo", "Portimonense", "Setubal", "Aves", "Tondela"]'
     }
