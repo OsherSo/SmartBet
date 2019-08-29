@@ -13,7 +13,7 @@ const leagues = [
         name: "Seria-A",
         url: {
             old: "https://www.football-data.co.uk/mmz4281/1819/I1.csv",
-            new: "https://www.football-data.co.uk/mmz4281/1819/I1.csv"
+            new: "https://www.football-data.co.uk/mmz4281/1920/I1.csv"
         },
         relevantTeams: `["Juventus", "Napoli", "Spal", "Atalanta", "Inter", "Milan", "Roma", "Torino", "Lazio", "Sampdoria", "Bologna", "Sassuolo", "Udinese", "Parma", "Cagliari", "Fiorentina", "Genoa"]`
     },
@@ -22,7 +22,7 @@ const leagues = [
         name: "La-Liga",
         url: {
             old: "https://www.football-data.co.uk/mmz4281/1819/SP1.csv",
-            new: "https://www.football-data.co.uk/mmz4281/1819/SP1.csv"
+            new: "https://www.football-data.co.uk/mmz4281/1920/SP1.csv"
         },
         relevantTeams: `["Barcelona", "Ath Madrid", "Real Madrid", "Valencia", "Getafe", "Sevilla", "Espanol", "Ath Bilbao", "Sociedad", "Betis", "Alaves", "Eibar", "Leganes", "Villarreal", "Levante", "Valladolid", "Celta"]`
     },
@@ -31,7 +31,7 @@ const leagues = [
         name: "Bundesliga",
         url: {
             old: "https://www.football-data.co.uk/mmz4281/1819/D1.csv",
-            new: "https://www.football-data.co.uk/mmz4281/1819/D1.csv"
+            new: "https://www.football-data.co.uk/mmz4281/1920/D1.csv"
         },
         relevantTeams: `["Bayern Munich", "Dortmund", "RB Leipzig", "Leverkusen", "M'gladbach", "Wolfsburg", "Ein Frankfurt", "Werder Bremen", "Hoffenheim", "Fortuna Dusseldorf", "Hertha", "Mainz", "Freiburg", "Schalke 04", "Augsburg"]`
     },
